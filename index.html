@@ -8,6 +8,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>See'N Say StoryMaker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
 </head>
@@ -57,6 +60,11 @@
         <!-- Tell my Story button -->
          <div id="story-trigger">
             <button id="btn-story" type="button">Tell My Story!</button>
+            <button id="btn-reset" type="button">Reset</button>
+         </div>
+
+         <div id="rand-story-trigger">
+            <button id="btn-random" type="button">Create a Random Story!</button>
          </div>
 
          <!-- Story Output Area -->
@@ -64,6 +72,13 @@
             <h2>Your Story</h2>
             <p id="story-text"></p>
          </section>
+
+         <!-- Previous Stories Section -->
+        <section id="previous-stories">
+            <h2>Previous Stories</h2>
+            <div id="stories-list"></div>
+            <button id="btn-delete" type="button">Delete All Stories</button>
+        </section>
 
       </main>
       <footer>
