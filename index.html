@@ -1,7 +1,7 @@
 <!-- See'n Say StoryMaker Assignment 1 -->
 <!-- Natasha Bertrand - 200458345 -->
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -10,5 +10,64 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
 </head>
+
+<body>
+    <!-- Page Header -->
+     <header id="site-header">
+        <h1>See'N Say StoryMaker</h1>
+        <p>Click each button to cycle through words. When your happy, cilck "Tell My Story"</p>
+     </header>
+
+     <!-- Word Selector Section -->
+      <main id="story-maker">
+        <section id="word-selectors">
+            <h2>Build Your Own Story</h2>
+            <!-- Word slot one - WHO(Subject) -->
+            <div class="word-slot">
+                <span class="slot-label">Who</span>
+                <button id="btn-who" class="word-btn" type="button">A little bear</button>
+            </div>
+
+            <!-- Word slot two - DID WHAT(Verb) -->
+            <div class="word-slot">
+                <span class="slot-label">Did what?</span>
+                <button id="btn-action" class="word-btn" type="button">happily skipped</button>
+            </div>
+
+            <!-- Word slot three - WHERE(Place) -->
+            <div class="word-slot">
+                <span class="slot-label">Where?</span>
+                <button id="btn-where" class="word-btn" type="button">through the forest</button>
+            </div>
+
+            <!-- Word slot four - WITH WHAT(Object) -->
+            <div class="word-slot">
+                <span class="slot-label">With what?</span>
+                <button id="btn-object" class="word-btn" type="button">carrying a latern</button>
+            </div>
+
+            <!-- Word slot five - ENDING(Outcome) -->
+            <div class="word-slot">
+                <span class="slot-label">And then?</span>
+                <button id="btn-ending" class="word-btn" type="button">found a hidden door</button>
+            </div>
+        </section>
+
+        <!-- Tell my Story button -->
+         <div id="story-trigger">
+            <button id="btn-story" type="button">Tell My Story!</button>
+         </div>
+
+         <!-- Story Output Area -->
+         <section id="story-output">
+            <h2>Your Story</h2>
+            <p id="story-text"></p>
+         </section>
+
+      </main>
+      <footer>
+        <p>Inspired by Mattel® See'N Say Storymaker.</p>
+      </footer>
+</body>
 
 </html>
