@@ -1,0 +1,208 @@
+/* See'N Say StoryMaker - Assignment 1 */
+/* Natasha Bertrand - 200458345 */
+
+/* Root Variables*/
+:root {
+    --yellow:      #F9D923;
+    --purple:      #9B59B6;
+    --green:       #2ECC71;
+    --pink:        #FF6EB4;
+    --orange:      #FF8C00;
+    --blue:        #3AAAE1;
+    --dark:        #333333;
+    --light:       #FFFDF4;
+    --radius:      12px;
+    --slot-radius: 16px;
+}
+
+/* Reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    background-color: var(--yellow);
+    font-family: 'Nunito', sans-serif;
+    color: var(--dark);
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* Header */
+#site-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#site-header h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3rem;
+    color: var(--blue);
+    text-shadow: 3px 3px 0px var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+#site-header p {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+/* Main*/
+#story-maker {
+    background-color: var(--light);
+    border: 4px solid var(--dark);
+    border-radius: var(--radius);
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Section Headings*/
+h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.6rem;
+    margin-bottom: 1.25rem;
+    color: var(--dark);
+}
+
+/* Word Slots */
+#word-selectors {
+    margin-bottom: 1.5rem;
+}
+
+.word-slot {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.85rem;
+}
+
+.slot-label {
+    font-weight: 700;
+    font-size: 1rem;
+    min-width: 80px;
+    color: var(--dark);
+}
+
+/* Word Buttons — each slot gets its own toy color  */
+.word-btn {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 3px solid var(--dark);
+    border-radius: var(--slot-radius);
+    padding: 0.5rem 1.25rem;
+    cursor: pointer;
+    flex: 1;
+    text-align: left;
+    transition: transform 0.1s ease;
+}
+
+.word-btn:active {
+    transform: scale(0.96);
+}
+
+
+#btn-who     { background-color: var(--purple); color: white; }
+#btn-action  { background-color: var(--green);  color: white; }
+#btn-where   { background-color: var(--pink);   color: white; }
+#btn-object  { background-color: var(--orange); color: white; }
+#btn-ending  { background-color: var(--blue);   color: white; }
+
+.word-btn:hover {
+    filter: brightness(1.1);
+}
+
+/*  Story Trigger Buttons*/
+#story-trigger {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+#story-trigger button {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.1rem;
+    padding: 0.6rem 1.5rem;
+    border: 3px solid var(--dark);
+    border-radius: var(--slot-radius);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+#story-trigger button:active {
+    transform: scale(0.96);
+}
+
+#btn-story  { background-color: var(--green);  color: white; }
+#btn-random { background-color: var(--purple); color: white; }
+#btn-reset  { background-color: var(--orange); color: white; }
+
+#story-trigger button:hover {
+    filter: brightness(1.1);
+}
+
+/* Story Output */
+#story-output {
+    background-color: var(--yellow);
+    border: 3px solid var(--dark);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    min-height: 70px;
+}
+
+#story-text {
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+/* Previous Stories */
+#previous-stories {
+    background-color: var(--light);
+    border-top: 3px dashed var(--dark);
+    padding-top: 1.25rem;
+}
+
+#stories-list p {
+    background-color: var(--blue);
+    color: white;
+    font-weight: 700;
+    border: 2px solid var(--dark);
+    border-radius: var(--radius);
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#btn-delete {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1rem;
+    margin-top: 0.75rem;
+    padding: 0.5rem 1.25rem;
+    background-color: #E74C3C;
+    color: white;
+    border: 3px solid var(--dark);
+    border-radius: var(--slot-radius);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+#btn-delete:hover  { filter: brightness(1.1); }
+#btn-delete:active { transform: scale(0.96);  }
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--dark);
+    font-weight: 700;
+}
